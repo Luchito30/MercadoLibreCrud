@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('partials/head', {title: "editar" }) %>
+
+	<body>
+		<!-- Header -->
+		<%- include('partials/headerNavbar') %>
+			<!-- /Header -->
+
+			<!-- product delete -->
+
+			<section class="remove__section">
+				
+					<h2 class="remove__titulo">¡Edicion exitosa!</h2>
+			
+
+				<h4 class="remove__name">Se edito correctamente el producto <%- name %> </h3>
+						<h4 class="remove__confirm">¿Que quieres hacer?</h4>
+						<div class="remove__buttoms">
+                            <a href="/products/detail/<%- id %> " class="remove__buttom"><span class="remove__cancelar">Ir a Productos</span></a>
+							<form action="/products/remove/<%- id %>?_method=DELETE" method="post">
+								<button type="submit" class="remove__buttom">Borrar Producto</button>
+							</form>
+							
+						</div>
+			</section>
+			<!-- footer -->
+			<%- include('partials/footer') %>
+				<!-- /footer -->
+
+	</body>
+
+</html>

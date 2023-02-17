@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('partials/head', {title: "eliminar" }) %>
+
+	<body>
+		<!-- Header -->
+		<%- include('partials/headerNavbar') %>
+			<!-- /Header -->
+
+			<!-- product delete -->
+
+			<section class="remove__section">
+				
+					<h2 class="remove__titulo">¡ADVERTENCIA!</h2>
+			
+
+				<h4 class="remove__name">Si eliminas el producto <%- name %> no podras recuperarlo</h3>
+						<h4 class="remove__confirm">¿Estas seguro que quieres continuar?</h4>
+						<div class="remove__buttoms">
+							<form action="/products/remove/<%- id %>?_method=DELETE" method="post">
+								<button type="submit" class="remove__buttom">Borrar</button>
+							</form>
+							<a href="/products/detail/<%- id %> " class="remove__buttom"><span class="remove__cancelar">Cancelar</span></a>
+						</div>
+			</section>
+			<!-- footer -->
+			<%- include('partials/footer') %>
+				<!-- /footer -->
+
+	</body>
+
+</html>
