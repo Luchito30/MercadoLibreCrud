@@ -360,6 +360,21 @@ hr {
   border-radius: 8px;
   border: none;
   margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.buy-now-button2 {
+  background-color: red;
+  font-size: 1.6em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+  margin-left: 20px;
 }
 
 .action-button {
@@ -454,7 +469,6 @@ margin-right: 25px;
 .remove__buttom:hover{
   background-color: black;
 }
-
 
 
 /*====== Media-Queries ======*/

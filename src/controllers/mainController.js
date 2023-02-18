@@ -13,7 +13,8 @@ const controller = {
 		return res.render("index",{
 			inSale,
 			visited,
-			toThousand
+			toThousand,
+			products
 		})
 	},
 	search: (req, res) => {

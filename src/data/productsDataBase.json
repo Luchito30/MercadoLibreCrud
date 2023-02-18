@@ -142,5 +142,41 @@
       "category": "in-sale",
       "description": "Deja que la música dance cobre vida con EXTRA BASS™ Anima el ambiente con EXTRA BASS™1. Un radiador pasivo trabaja con el parlante monoaural para potenciar los tonos bajos y mejorar los graves, a pesar del tamaño compacto. ",
       "image": "img-parlante-sony.jpg"
+   },
+   {
+      "id": 17,
+      "name": "T-Dagger Mouse Gamer T-tgm108 Recruit 2 Rgb 3200dpi",
+      "description": "Un ratón gamer que apuesta fuerte por la ergonomía para acomodarse a la mano mejor que cualquier otro. Precisión total.",
+      "price": 2600,
+      "discount": 10,
+      "image": "1676697139837_products_.jpg",
+      "category": "in-sale"
+   },
+   {
+      "id": 18,
+      "name": "Nintendo Switch Consola Oled 64GB White + Mario 3D World - Bowser Fury",
+      "description": "La consola Nintendo Switch está diseñada para cualquier estilo de vida, transformándose rápidamente de una consola casera a una consola portátil.",
+      "price": 230000,
+      "discount": 10,
+      "image": "1676698210894_products_.jpg",
+      "category": "in-sale"
+   },
+   {
+      "id": 19,
+      "name": "PS5 Consola Edición Fisica (con lectora blu-ray) Bundle GOW Digital + Dualsense Cosmic Red",
+      "description": "Play Has No Limits™\r\nExperimentá una carga increíblemente rápida con un SSD de ultra alta velocidad, inmersión más profunda con soporte para retroalimentación háptica, disparadores adaptativos y audio 3D, y una nueva generación de increíbles juegos de PlayStation®.",
+      "price": 355000,
+      "discount": 0,
+      "image": "1676698364438_products_.jpg",
+      "category": "visited"
+   },
+   {
+      "id": 20,
+      "name": "Nintendo Switch Kirby Return To Dreamland Deluxe",
+      "description": "¡Un juego de plataformas de Kirby para todo el mundo!",
+      "price": 22000,
+      "discount": 0,
+      "image": "1676698487989_products_.jpg",
+      "category": "visited"
    }
 ]

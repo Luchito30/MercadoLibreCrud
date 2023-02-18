@@ -35,15 +35,15 @@ const controller = {
 	
 	// Create -  Method to store
 	store: (req, res) => {
-	const {name,discount,price,description,category} = req.body
+	const {name,discount,price,description,category,image} = req.body
 	const productNew = {
 		id : products[products.length -1].id +1,
 		name: name.trim(),
 		description : description.trim(),
 		price : +price,
 		discount:+discount,
-		image:null,
-		category
+		image: req.file ? req.file.filename : null,
+		category: category
 		
 		};
 		products.push(productNew),
@@ -64,7 +64,7 @@ const controller = {
 	update: (req, res) => {
 		const {id} = req.params;
 		const product = products.find(product => product.id ===+id);
-		const {name, price,description,category,image,discount}= req.body;
+		const {name, price,description,category,discount,image}= req.body;
 
 		const modifiedProduct ={
 	        id: +id,
@@ -72,8 +72,8 @@ const controller = {
 			description : description.trim(),
 			price : +price,
 			discount:+discount,
-			image:product.image,
-			category
+			image: req.file ? req.file.filename : product.image,
+			category: category
 		}
 		const modifiedProducts = products.map(product =>{
 			if(product.id === +id){
